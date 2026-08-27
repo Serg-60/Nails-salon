@@ -1343,7 +1343,7 @@
         background: var(--ash);
         cursor: pointer;
         transition:
-          background var(--dur-fast),
+          background-color var(--dur-fast),
           transform var(--dur-fast);
       }
       .t-dot.active {
