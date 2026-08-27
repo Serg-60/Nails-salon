@@ -1,0 +1,1413 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Приватна nail-студія преміум класу. Манікюр, педикюр, nail art, подологія. Записатись онлайн — швидко та зручно."
+    />
+    <meta
+      name="keywords"
+      content="манікюр, педикюр, nail art, подологія, нарощування нігтів, гель, BIAB, Шпола"
+    />
+    <meta property="og:title" content="OLESYA NAILS — Приватна beauty-студія" />
+    <meta
+      property="og:description"
+      content="Преміум nail art та подологія. Авторський підхід, стерильні інструменти, індивідуальний дизайн."
+    />
+    <meta property="og:type" content="website" />
+    <title>OLESYA NAILS — Nail Art Studio</title>
+
+    <!-- Google Fonts: Editorial + Utility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <style></style>
+
+  <body>
+    <!-- ================================================
+     NAVIGATION
+================================================ -->
+    <nav
+      class="nav"
+      id="navbar"
+      role="navigation"
+      aria-label="Головна навігація"
+    >
+      <div class="u-container">
+        <div class="nav__inner">
+          <!-- Logo -->
+          <img
+            class="logo"
+            src="img/logo-manicure-salon.png"
+            data-i18n-alt="aboutImgAlt"
+            alt="Logo OLESYA"
+          />
+
+          <!-- Desktop links -->
+          <ul class="nav__links" role="list">
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#portfolio">Портфоліо</a></li>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#podology">Подологія</a></li>
+            <li><a href="#certificates">Сертифікати</a></li>
+            <li><a href="#contact">Контакти</a></li>
+          </ul>
+
+          <!-- Desktop book btn -->
+          <a
+            href="#contact"
+            class="btn-book nav__book-desktop"
+            aria-label="Записатись на послугу"
+          >
+            <span>Записатись</span>
+          </a>
+
+          <!-- Burger -->
+          <button
+            class="nav__burger"
+            id="burgerBtn"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      class="nav__mobile"
+      id="mobileMenu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Мобільне меню"
+    >
+      <a href="#services" onclick="closeMenu()">Послуги</a>
+      <a href="#portfolio" onclick="closeMenu()">Портфоліо</a>
+      <a href="#about" onclick="closeMenu()">Про мене</a>
+      <a href="#podology" onclick="closeMenu()">Подологія</a>
+      <a href="#certificates" onclick="closeMenu()">Сертифікати</a>
+      <a href="#contact" onclick="closeMenu()">Контакти</a>
+      <a href="#contact" class="btn-book" onclick="closeMenu()"
+        ><span>Записатись</span></a
+      >
+    </div>
+
+    <!-- ================================================
+     HERO — BLOCK 1
+     headingLevel: h1 (перший екран на сторінці)
+================================================ -->
+    <section class="hero" id="home" aria-label="Головний екран">
+      <!-- Background video / poster -->
+      <div class="hero__bg">
+        <!--
+      CONFIG:
+        videoSrc:        "assets/hero.mp4"        — шлях до відео
+        posterSrc:       "assets/hero-poster.jpg" — постер (показується до завантаження відео)
+        mobileImageSrc:  "assets/hero-mobile.jpg" — зображення для мобільних
+
+      alt: "Рука з ідеальним манікюром — LUNA NAILS"
+    -->
+        <img
+          class="hero__bg-img"
+          src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1800&q=80&auto=format"
+          alt="Рука з ідеальним манікюром хром і глянець — LUNA NAILS Studio"
+          fetchpriority="high"
+        />
+        <!--
+    <video
+      class="hero__bg-video"
+      id="heroVideo"
+      autoplay muted loop playsinline preload="metadata"
+      poster="assets/hero-poster.jpg"
+      aria-hidden="true"
+    >
+      <source src="assets/hero.mp4" type="video/mp4" />
+    </video>
+    -->
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <!-- Main content -->
+      <div class="hero__content u-container">
+        <!-- Live badge -->
+        <div
+          class="hero__badge"
+          id="heroBadge"
+          aria-label="Приватна студія, відкрита для запису"
+        >
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          <span class="hero__badge-text"
+            >Приватна студія · Доступний запис</span
+          >
+        </div>
+
+        <!-- H1 — єдиний на сторінці -->
+        <h1
+          class="hero__h1"
+          id="heroHeading"
+          aria-label="YOUR NAILS. YOUR SIGNATURE."
+        >
+          <span class="hero__word"
+            ><span class="hero__word-inner">YOUR</span></span
+          >&nbsp;<br />
+          <span class="hero__word"
+            ><span class="hero__word-inner"><em>NAILS.</em></span></span
+          ><br />
+          <span class="hero__word"
+            ><span class="hero__word-inner">YOUR</span></span
+          >&nbsp;<br />
+          <span class="hero__word"
+            ><span class="hero__word-inner">SIGNATURE.</span></span
+          >
+        </h1>
+
+        <!-- Services strip -->
+        <div class="hero__strip" id="heroStrip" aria-label="Перелік послуг">
+          <span class="hero__strip-item">Манікюр</span>
+          <span class="hero__strip-sep" aria-hidden="true"></span>
+          <span class="hero__strip-item">Педикюр</span>
+          <span class="hero__strip-sep" aria-hidden="true"></span>
+          <span class="hero__strip-item">Nail Art</span>
+          <span class="hero__strip-sep" aria-hidden="true"></span>
+          <span class="hero__strip-item">Гель / BIAB</span>
+          <span class="hero__strip-sep" aria-hidden="true"></span>
+          <span class="hero__strip-item">Подологія</span>
+        </div>
+
+        <!-- CTAs -->
+        <div class="hero__ctas" id="heroCtas">
+          <a
+            href="#contact"
+            class="cta-primary"
+            aria-label="Записатись на манікюр або педикюр"
+            >Записатись</a
+          >
+          <a
+            href="#portfolio"
+            class="cta-secondary"
+            aria-label="Переглянути портфоліо робіт"
+            >Переглянути роботи</a
+          >
+        </div>
+      </div>
+
+      <!-- Floating stats (desktop only) -->
+      <aside
+        class="hero__floats"
+        id="heroFloats"
+        aria-label="Статистика студії"
+      >
+        <div class="hero__float-card">
+          <div class="hero__float-num">5+</div>
+          <div class="hero__float-label">Років досвіду</div>
+        </div>
+        <div class="hero__float-card">
+          <div class="hero__float-num">1000+</div>
+          <div class="hero__float-label">Задоволених клієнтів</div>
+        </div>
+        <div class="hero__float-card">
+          <div class="hero__float-num">2000+</div>
+          <div class="hero__float-label">Виконаних процедур</div>
+        </div>
+      </aside>
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" id="heroScroll" aria-hidden="true">
+        <span class="hero__scroll-text">Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+
+      <!-- Vertical editorial text -->
+      <span class="hero__vertical" aria-hidden="true"
+        >NAIL ART STUDIO · SHPOLA · UA</span
+      >
+    </section>
+
+    <!-- ================================================
+     BRAND STATEMENT — BLOCK 2
+     headingLevel: h2 (не перший блок)
+================================================ -->
+    <section class="statement" id="statement" aria-label="Філософія бренду">
+      <div class="u-container">
+        <div class="statement__inner">
+          <div class="reveal">
+            <h2 class="statement__headline">
+              BEAUTY<br />IS IN THE<br /><em>DETAILS.</em>
+            </h2>
+          </div>
+
+          <div class="statement__body reveal reveal-delay-2">
+            <span class="statement__overline">Моя філософія</span>
+            <p class="statement__text">
+              Кожна деталь має значення. Від першого дотику до фінального глянцю
+              — я створюю досвід, а не просто нігті. Преміальні матеріали,
+              стерильні інструменти та справжня любов до nail-мистецтва в кожній
+              роботі.
+            </p>
+            <div class="statement__divider"></div>
+            <blockquote class="statement__quote">
+              "Ваші нігті — це ваш підпис. Я допомагаю зробити його незабутнім."
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ================================================
+     ABOUT — BLOCK 5
+     headingLevel: h2
+================================================ -->
+    <section class="about" id="about" aria-label="Про майстра">
+      <div class="u-container">
+        <div class="about__grid">
+          <!-- Portrait -->
+          <div class="about__img-wrap reveal">
+            <div class="about__img-bg" aria-hidden="true"></div>
+            <!--
+          CONFIG:
+            imageSrc: "assets/portrait.jpg"
+            alt:      "Олеся — nail-майстер та подолог студії LUNA NAILS"
+        -->
+            <img
+              class="about__img"
+              src="img/about.png"
+              alt="Олеся — nail-майстер та подолог студії LUNA NAILS, Київ"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Text -->
+          <div class="about__content reveal reveal-delay-2">
+            <p class="section-overline">Про мене</p>
+            <h2 class="about__headline">
+              NOT JUST A<br />MANICURE.<br /><em
+                >A PERSONAL<br />EXPERIENCE.</em
+              >
+            </h2>
+            <p class="about__text">
+              Привіт, я Олеся. Понад 5 років я перетворюю звичайний манікюр на
+              мистецтво. Сертифікований nail-майстер та подолог. Спеціалізуюсь
+              на авторських дизайнах, складних техніках nail art та медичному
+              догляді за стопами. Для мене кожен клієнт — це унікальний проєкт,
+              а не просто запис у розкладі.
+            </p>
+
+            <div class="about__stats" aria-label="Статистика роботи">
+              <div class="about__stat">
+                <div class="about__stat-num">5+</div>
+                <div class="about__stat-label">Років досвіду</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-num">1000+</div>
+                <div class="about__stat-label">Клієнтів</div>
+              </div>
+              <div class="about__stat">
+                <div class="about__stat-num">2000+</div>
+                <div class="about__stat-label">Процедур</div>
+              </div>
+            </div>
+
+            <div class="about__certs" aria-label="Сертифікати та спеціалізації">
+              <span class="about__cert-tag">Nail Art Pro</span>
+              <span class="about__cert-tag">Сертифікований подолог</span>
+              <span class="about__cert-tag">BIAB Specialist</span>
+              <span class="about__cert-tag">Стерилізація ISO</span>
+              <span class="about__cert-tag">Premium Products</span>
+              <span class="about__cert-tag">OPI · CND · IBD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Sertyfikats -->
+    <section
+      class="certificates"
+      id="certificates"
+      aria-label="Дипломи та сертифікати"
+    >
+      <div class="u-container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-overline">Освіта та кваліфікація</p>
+            <h2 class="section-h2" style="color: var(--ink)">
+              Серти<em>фікати</em>
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="certificates__slider"
+          role="region"
+          aria-label="Слайдер сертифікатів"
+          aria-live="polite"
+        >
+          <div class="certificates__track" id="certTrack">
+
+            <div class="cert-card" role="article">
+              <div class="cert-card__inner">
+               
+                <img
+                  src="img/sertifikat1.jpg"
+                  alt="Сертифікат подолога 2026"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+
+                <div class="cert-card__category">Подологія</div>
+                <h3 class="cert-card__title">Сертифікат</h3>
+                <p class="cert-card__issuer">UP_GRADE NAILS MARAFON</p>
+                <div class="cert-card__year">2026</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+            <div class="cert-card" role="article" aria-label="Сертифікат 1">
+              <div class="cert-card__inner">
+                <img
+                  src="img/sertifikat2.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+                <div class="cert-card__category">Майстер нігтьової індустрії</div>
+                <h3 class="cert-card__title">Сертифікат<h3>
+                <p class="cert-card__issuer">Marafon Super Nails</p>
+                <div class="cert-card__year">2026</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+            <div class="cert-card" role="article" aria-label="Сертифікат 2">
+              <div class="cert-card__inner">
+                <img
+                  src="img/sertifikat3.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+                <div class="cert-card__category">Нейл-арт</div>
+                <h3 class="cert-card__title">Нейл-майсетр</h3>
+                <p class="cert-card__issuer">marafon super nails</p>
+                <div class="cert-card__year">2025</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+            <div class="cert-card" role="article" aria-label="Сертифікат 3">
+              <div class="cert-card__inner">
+                <img
+                  src="img/sertifikat4.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+                <div class="cert-card__category">Нарощування</div>
+                <h3 class="cert-card__title">Сертифікат</h3>
+                <p class="cert-card__issuer">marafon super nails</p>
+                <div class="cert-card__year">2026</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+            <div class="cert-card" role="article" aria-label="Сертифікат 4">
+              <div class="cert-card__inner">
+                <img
+                  src="img/sertifikat5.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+                <div class="cert-card__category">Nails індустрія</div>
+                <h3 class="cert-card__title">Сертифікат</h3>
+                <p class="cert-card__issuer">marafon super nails</p>
+                <div class="cert-card__year">2025</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+            <div class="cert-card" role="article" aria-label="Сертифікат 5">
+              <div class="cert-card__inner">
+                <img
+                  src="img/sertifikat6.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+                <div class="cert-card__category">Майстер-клас</div>
+                <h3 class="cert-card__title">Сертифікат</h3>
+                <p class="cert-card__issuer">marafon super nails</p>
+                <div class="cert-card__year">2026</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+            <div class="cert-card" role="article" aria-label="Сертифікат 6">
+              <div class="cert-card__inner">
+                <img
+                  src="img/sertifikat7.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                />
+                <div class="cert-card__category">Майстер педікюру</div>
+                <h3 class="cert-card__title">Сертифікат</h3>
+                <p class="cert-card__issuer">Vijiderm</p>
+                <div class="cert-card__year">2025</div>
+                <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+
+              <div class="cert-card" role="article" aria-label="Сертифікат 7">
+                <div class="cert-card__inner">
+                  <img
+                  src="img/diplom1.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                   />
+                  <div class="cert-card__category">Подолог та дерматолог</div>
+                  <h3 class="cert-card__title">Диплом</h3>
+                   <p class="cert-card__issuer">Космо Трейд</p>
+                   <div class="cert-card__year">2025</div>
+                   <div class="cert-card__seal" aria-hidden="true">✦</div>
+                </div>
+              </div>
+
+              <div class="cert-card" role="article" aria-label="Сертифікат 8">
+                <div class="cert-card__inner">
+                  <img
+                  src="img/diplom2.jpg"
+                  alt="Сертифікат подолога 2021"
+                  class="cert-card__photo"
+                  loading="lazy"
+                  />
+                  <div class="cert-card__category">Методика доктора Конєва</div>
+                  <h3 class="cert-card__title">Диплом</h3>
+                  <p class="cert-card__issuer">Космо Трейд</p>
+                  <div class="cert-card__year">2025</div>
+                  <div class="cert-card__seal" aria-hidden="true">✦</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="certificates__controls" aria-label="Управління слайдером">
+          <button class="t-btn" id="certPrev" aria-label="Попередній">←</button>
+          <div
+            class="t-dots"
+            role="list"
+            aria-label="Позиція слайдера"
+            id="certDots"
+          ></div>
+          <button class="t-btn" id="certNext" aria-label="Наступний">→</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+     SERVICES — BLOCK 3
+     headingLevel: h2
+================================================ -->
+    <section class="services" id="services" aria-label="Послуги студії">
+      <div class="u-container">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="section-overline">Що я роблю</p>
+            <h2 class="section-h2">Послуги<br /><em>студії</em></h2>
+          </div>
+        </div>
+
+        <div class="services__grid" role="list">
+          <!-- Маникюр -->
+          <article
+            class="service-card reveal"
+            role="listitem"
+            aria-label="Послуга: Манікюр"
+          >
+            <span class="service-card__num" aria-hidden="true">01</span>
+            <span class="service-card__icon" aria-hidden="true">✦</span>
+            <h3 class="service-card__name">Манікюр</h3>
+            <p class="service-card__desc">
+              Класичний, апаратний або комбінований. Ідеальна форма, догляд за
+              кутикулою, довговічне покриття.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">від 350 <span>грн</span></span>
+              <span class="service-card__time">45–60 хв</span>
+            </div>
+            <a
+              href="#contact"
+              class="service-card__cta"
+              aria-label="Записатись на манікюр"
+              >Записатись</a
+            >
+          </article>
+
+          <!-- Педикюр -->
+          <article
+            class="service-card reveal reveal-delay-1"
+            role="listitem"
+            aria-label="Послуга: Педикюр"
+          >
+            <span class="service-card__num" aria-hidden="true">02</span>
+            <span class="service-card__icon" aria-hidden="true">◈</span>
+            <h3 class="service-card__name">Педикюр</h3>
+            <p class="service-card__desc">
+              Апаратний та класичний. Повний догляд за стопами, видалення
+              натоптишів, спа-процедури.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">від 450 <span>грн</span></span>
+              <span class="service-card__time">60–90 хв</span>
+            </div>
+            <a
+              href="#contact"
+              class="service-card__cta"
+              aria-label="Записатись на педикюр"
+              >Записатись</a
+            >
+          </article>
+
+          <!-- Nail Art -->
+          <article
+            class="service-card reveal reveal-delay-2"
+            role="listitem"
+            aria-label="Послуга: Nail Art"
+          >
+            <span class="service-card__num" aria-hidden="true">03</span>
+            <span class="service-card__icon" aria-hidden="true">❋</span>
+            <h3 class="service-card__name">Nail Art</h3>
+            <p class="service-card__desc">
+              Авторські дизайни, розписи, хром, фольга, ембелліші. Будь-яка
+              складність та рівень деталізації.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price"
+                >від 100 <span>грн / дизайн</span></span
+              >
+              <span class="service-card__time">від 20 хв</span>
+            </div>
+            <a
+              href="#contact"
+              class="service-card__cta"
+              aria-label="Замовити nail art"
+              >Записатись</a
+            >
+          </article>
+
+          <!-- Gel / BIAB -->
+          <article
+            class="service-card reveal reveal-delay-1"
+            role="listitem"
+            aria-label="Послуга: Гель / BIAB"
+          >
+            <span class="service-card__num" aria-hidden="true">04</span>
+            <span class="service-card__icon" aria-hidden="true">◇</span>
+            <h3 class="service-card__name">Гель / BIAB</h3>
+            <p class="service-card__desc">
+              Builder In A Bottle — зміцнення натуральних нігтів. Ідеально для
+              слабких та ламких нігтів.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">від 650 <span>грн</span></span>
+              <span class="service-card__time">75–90 хв</span>
+            </div>
+            <a
+              href="#contact"
+              class="service-card__cta"
+              aria-label="Записатись на гель BIAB"
+              >Записатись</a
+            >
+          </article>
+
+          <!-- Нарощування -->
+          <article
+            class="service-card reveal reveal-delay-2"
+            role="listitem"
+            aria-label="Послуга: Нарощування нігтів"
+          >
+            <span class="service-card__num" aria-hidden="true">05</span>
+            <span class="service-card__icon" aria-hidden="true">⬡</span>
+            <h3 class="service-card__name">Нарощування</h3>
+            <p class="service-card__desc">
+              Акрил, гель, полігель. Будь-яка форма та довжина. Зміцнення та
+              відновлення після пошкоджень.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">від 800 <span>грн</span></span>
+              <span class="service-card__time">90–120 хв</span>
+            </div>
+            <a
+              href="#contact"
+              class="service-card__cta"
+              aria-label="Записатись на нарощування нігтів"
+              >Записатись</a
+            >
+          </article>
+
+          <!-- Подологія -->
+          <article
+            class="service-card reveal reveal-delay-3"
+            role="listitem"
+            aria-label="Послуга: Подологія"
+          >
+            <span class="service-card__num" aria-hidden="true">06</span>
+            <span class="service-card__icon" aria-hidden="true">✿</span>
+            <h3 class="service-card__name">Подологія</h3>
+            <p class="service-card__desc">
+              Медичний догляд за стопами. Вросло нігтя, мозолі, гіперкератоз,
+              грибок — вирішуємо ефективно.
+            </p>
+            <div class="service-card__meta">
+              <span class="service-card__price">від 600 <span>грн</span></span>
+              <span class="service-card__time">60–90 хв</span>
+            </div>
+            <a
+              href="#contact"
+              class="service-card__cta"
+              aria-label="Записатись до подолога"
+              >Записатись</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+        <!-- ================================================
+     PORTFOLIO — BLOCK 4
+     headingLevel: h2
+================================================ -->
+    <section class="portfolio" id="portfolio" aria-label="Портфоліо робіт">
+      <div class="u-container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-overline">Мої роботи</p>
+            <h2 class="section-h2">Порт<em>фоліо</em></h2>
+          </div>
+          <a
+            href="#contact"
+            class="btn-outline"
+            aria-label="Записатись для створення індивідуального дизайну"
+            >Хочу свій дизайн</a
+          >
+        </div>
+
+        <div class="portfolio__masonry" role="list" aria-label="Галерея робіт">
+          <div class="p-item reveal" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1777288390469-828f8816231c?q=80&w=1262&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Хром манікюр дзеркальний ефект — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Chrome</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-1" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1780624195552-7dd4c2bd12d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fENsYXNzaWMlMjBGcmVuY2glMjBtYW5pY3VyZXxlbnwwfHwyfHx8Mg%3D%3D"
+              alt="Французький манікюр класика — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">French</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-2" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1772983166346-93afb9898264?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fCVEMCU5RCVEMSU4RSVEMCVCNCVEMCVCRSVEMCVCMiVEMCVCOCVEMCVCOSUyMCVEMCVCQyVEMCVCMCVEMCVCRCVEMSU5NiVEMCVCQSVEMSU4RSVEMSU4MCUyMCVEMCVCQyVEMSU5NiVEMCVCRCVEMSU5NiVEMCVCQyVEMCVCMCVEMCVCQiVEMSU5NiVEMCVCNyVEMCVCQ3xlbnwwfHwyfHx8Mg%3D%3D"
+              alt="Нюдовий манікюр мінімалізм — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Nude</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-1" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1772322586702-73125782bd99?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fG1hbmljdXJlfGVufDB8fDJ8fHwy"
+              alt="Авторський nail art з розписом — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Nail Art</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-2" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1772322586785-3a34772cbc61?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fG1hbmljdXJlfGVufDB8fDJ8fHwy"
+              alt="Кольоровий манікюр яскравий дизайн — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Colorful</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-3" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1620265135490-1556065291cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMyN3x8fGVufDB8fHx8fA%3D%3D"
+              alt="Педикюр догляд за стопами — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Pedicure</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1762373349045-c2decd4ec3f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUxfHxtYW5pY3VyZXxlbnwwfHwyfHx8Mg%3D%3D"
+              alt="Мінімалістичний дизайн ліній на нігтях — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Minimal</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-1" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1608278618512-c5968bfa0523?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHBlZGljdXJlfGVufDB8fDJ8fHwy"
+              alt="Нарощування нігтів полігель — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">Extensions</span>
+            </div>
+          </div>
+
+          <div class="p-item reveal reveal-delay-2" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBlZGljdXJlfGVufDB8fDJ8fHwy"
+              alt="Gel BIAB зміцнення натуральних нігтів — OLESYA NAILS"
+              loading="lazy"
+            />
+            <div class="p-item__overlay">
+              <span class="p-item__label">BIAB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- ================================================
+     WHY ME — BLOCK 7
+     headingLevel: h2
+================================================ -->
+    <section class="why" id="why" aria-label="Переваги студії OLESYA NAILS">
+      <div class="u-container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-overline">Чому обирають мене</p>
+            <h2 class="section-h2">Мої<br /><em>переваги</em></h2>
+          </div>
+        </div>
+
+        <div class="why__grid" role="list">
+          <article
+            class="why__card reveal"
+            role="listitem"
+            aria-label="Перевага: Особистий підхід"
+          >
+            <div class="why__card-icon" aria-hidden="true">🌸</div>
+            <h3 class="why__card-name">Особистий підхід</h3>
+            <p class="why__card-desc">
+              Кожен клієнт отримує 100% уваги. Я враховую ваш спосіб життя,
+              стиль та побажання.
+            </p>
+          </article>
+          <article
+            class="why__card reveal reveal-delay-1"
+            role="listitem"
+            aria-label="Перевага: Стерильні інструменти"
+          >
+            <div class="why__card-icon" aria-hidden="true">✨</div>
+            <h3 class="why__card-name">Стерильні інструменти</h3>
+            <p class="why__card-desc">
+              Автоклавна стерилізація після кожного клієнта. Ваша безпека — мій
+              пріоритет.
+            </p>
+          </article>
+          <article
+            class="why__card reveal reveal-delay-2"
+            role="listitem"
+            aria-label="Перевага: Преміум матеріали"
+          >
+            <div class="why__card-icon" aria-hidden="true">💎</div>
+            <h3 class="why__card-name">Преміум матеріали</h3>
+            <p class="why__card-desc">
+              Тільки перевірені бренди: OPI, CND, IBD, Peggy Sage. Безпечно для
+              здоров'я нігтів.
+            </p>
+          </article>
+          <article
+            class="why__card reveal"
+            role="listitem"
+            aria-label="Перевага: Увага до деталей"
+          >
+            <div class="why__card-icon" aria-hidden="true">🔍</div>
+            <h3 class="why__card-name">Увага до деталей</h3>
+            <p class="why__card-desc">
+              Я перфекціоніст. Кожна лінія, кожен елемент дизайну — під суворим
+              контролем.
+            </p>
+          </article>
+          <article
+            class="why__card reveal reveal-delay-1"
+            role="listitem"
+            aria-label="Перевага: Авторські дизайни"
+          >
+            <div class="why__card-icon" aria-hidden="true">🎨</div>
+            <h3 class="why__card-name">Авторські дизайни</h3>
+            <p class="why__card-desc">
+              Ніяких шаблонів. Кожен дизайн — унікальний витвір, створений під
+              ваш образ.
+            </p>
+          </article>
+          <article
+            class="why__card reveal reveal-delay-2"
+            role="listitem"
+            aria-label="Перевага: Подологічна освіта"
+          >
+            <div class="why__card-icon" aria-hidden="true">🩺</div>
+            <h3 class="why__card-name">Подологічна освіта</h3>
+            <p class="why__card-desc">
+              Сертифікований подолог. Вирішую не лише естетичні, а й медичні
+              проблеми стоп.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+        <!-- ================================================
+     PODOLOGY — BLOCK 6
+     headingLevel: h2
+================================================ -->
+    <section
+      class="podology"
+      id="podology"
+      aria-label="Подологія та медичний догляд за стопами"
+    >
+      <div class="u-container">
+        <div class="reveal">
+          <p class="section-overline">Медичний догляд</p>
+          <h2 class="section-h2" style="color: var(--ink)">
+            Подо<em style="color: var(--cherry)">логія</em>
+          </h2>
+        </div>
+
+        <div class="podology__grid">
+          <!-- Services list -->
+          <div
+            class="podology__services"
+            role="list"
+            aria-label="Перелік подологічних послуг"
+          >
+            <div class="podology__item reveal" role="listitem">
+              <span class="podology__item-num" aria-hidden="true">01</span>
+              <div class="podology__item-text">
+                <h3 class="podology__item-name">Проф. догляд за стопами</h3>
+                <p class="podology__item-desc">
+                  Апаратна обробка, видалення гіперкератозу, зволоження
+                </p>
+              </div>
+            </div>
+            <div class="podology__item reveal reveal-delay-1" role="listitem">
+              <span class="podology__item-num" aria-hidden="true">02</span>
+              <div class="podology__item-text">
+                <h3 class="podology__item-name">Вросло нігтя</h3>
+                <p class="podology__item-desc">
+                  Безболісне видалення, корекційні скоби, профілактика
+                </p>
+              </div>
+            </div>
+            <div class="podology__item reveal reveal-delay-2" role="listitem">
+              <span class="podology__item-num" aria-hidden="true">03</span>
+              <div class="podology__item-text">
+                <h3 class="podology__item-name">Мозолі та натоптиші</h3>
+                <p class="podology__item-desc">
+                  Апаратне видалення без болю та пошкоджень
+                </p>
+              </div>
+            </div>
+            <div class="podology__item reveal reveal-delay-1" role="listitem">
+              <span class="podology__item-num" aria-hidden="true">04</span>
+              <div class="podology__item-text">
+                <h3 class="podology__item-name">Реконструкція нігтя</h3>
+                <p class="podology__item-desc">
+                  Відновлення пошкоджених нігтів, грибкових уражень
+                </p>
+              </div>
+            </div>
+            <div class="podology__item reveal reveal-delay-2" role="listitem">
+              <span class="podology__item-num" aria-hidden="true">05</span>
+              <div class="podology__item-text">
+                <h3 class="podology__item-name">Профілактичний огляд</h3>
+                <p class="podology__item-desc">
+                  Консультація та індивідуальний план догляду за стопами
+                </p>
+              </div>
+            </div>
+            <div class="podology__item reveal reveal-delay-3" role="listitem">
+              <span class="podology__item-num" aria-hidden="true">06</span>
+              <div class="podology__item-text">
+                <h3 class="podology__item-name">Педикюр для діабетиків</h3>
+                <p class="podology__item-desc">
+                  Безпечна медична процедура для чутливої шкіри
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aside -->
+          <aside class="podology__aside reveal reveal-delay-2">
+            <!--
+          CONFIG:
+            imageSrc: "assets/podology.jpg"
+            alt:      "Медичний подологічний педикюр — OLESYA NAILS"
+        -->
+            <img
+              class="podology__img"
+              src="https://images.unsplash.com/photo-1618842236037-7a612293f34e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+              alt="Медичний подологічний педикюр, догляд за стопами — OLESYA NAILS Studio"
+              loading="lazy"
+            />
+            <div class="podology__cta-block">
+              <p>"Здорові стопи — основа комфортного життя."</p>
+              <a
+                href="#contact"
+                class="cta-primary"
+                aria-label="Записатись на подологічну консультацію"
+                >Записатись на консультацію</a
+              >
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ================================================
+     TESTIMONIALS — BLOCK 8
+     headingLevel: h2
+================================================ -->
+    <!-- <section
+      class="testimonials"
+      id="testimonials"
+      aria-label="Відгуки клієнтів"
+    >
+      <div class="u-container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-overline">Що кажуть клієнти</p>
+            <h2 class="section-h2" style="color: var(--ink)">
+              Від<em>гуки</em>
+            </h2>
+          </div>
+        </div>
+
+        <div
+          class="testimonials__slider"
+          role="region"
+          aria-label="Слайдер відгуків"
+          aria-live="polite"
+        >
+          <div class="testimonials__track" id="testTrack">
+            <div
+              class="testimonial-card"
+              role="article"
+              aria-label="Відгук клієнта 1"
+            >
+              <div class="testimonial-card__stars" aria-label="5 зірок">
+                ★★★★★
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Прийшла до Анни вперше з проблемою вросло нігтя — і тепер не
+                уявляю, як могла ходити до когось іншого. Абсолютно безболісно,
+                стерильно, і при цьому ще й красиво зробила педикюр. Це моя
+                майстриня навіки!"
+              </blockquote>
+              <cite class="testimonial-card__author">— Марина К., клієнт</cite>
+            </div>
+
+            <div
+              class="testimonial-card"
+              role="article"
+              aria-label="Відгук клієнта 2"
+            >
+              <div class="testimonial-card__stars" aria-label="5 зірок">
+                ★★★★★
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Хром-манікюр вийшов просто неймовірний. Всі колеги запитували
+                де я робила нігті. Анна — справжній художник. Обожнюю, що вона
+                завжди пропонує щось нове і несподіване за моїм стилем."
+              </blockquote>
+              <cite class="testimonial-card__author">— Олена В., клієнт</cite>
+            </div>
+
+            <div
+              class="testimonial-card"
+              role="article"
+              aria-label="Відгук клієнта 3"
+            >
+              <div class="testimonial-card__stars" aria-label="5 зірок">
+                ★★★★★
+              </div>
+              <blockquote class="testimonial-card__text">
+                "Роблю BIAB вже пів року і нігті стали набагато міцнішими. Анна
+                пояснила мені всю технологію, підібрала правильний догляд.
+                Атмосфера в студії — як у дорогому салоні, але ставлення дуже
+                особисте і тепле."
+              </blockquote>
+              <cite class="testimonial-card__author">— Тетяна М., клієнт</cite>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <!-- <div
+          class="testimonials__controls"
+          aria-label="Управління слайдером відгуків"
+        >
+          <button class="t-btn" id="tPrev" aria-label="Попередній відгук">
+            ←
+          </button>
+          <div class="t-dots" role="list" aria-label="Позиція слайдера">
+            <button
+              class="t-dot active"
+              data-idx="0"
+              role="listitem"
+              aria-label="Відгук 1"
+              aria-current="true"
+            ></button>
+            <button
+              class="t-dot"
+              data-idx="1"
+              role="listitem"
+              aria-label="Відгук 2"
+            ></button>
+            <button
+              class="t-dot"
+              data-idx="2"
+              role="listitem"
+              aria-label="Відгук 3"
+            ></button>
+          </div>
+          <button class="t-btn" id="tNext" aria-label="Наступний відгук">
+            →
+          </button>
+        </div>
+      </div> -->
+    <!-- </section> --> 
+
+
+
+    <!-- ================================================
+     INSTAGRAM — BLOCK 9
+     headingLevel: h2
+================================================ -->
+    <section
+      class="instagram"
+      id="instagram"
+      aria-label="Instagram сторінка студії"
+    >
+      <div class="u-container">
+        <div class="reveal">
+          <p class="section-overline" style="color: var(--silver)">
+            Слідкуйте за роботами
+          </p>
+          <a
+            href="https://instagram.com/olesia_shpola_nails_podologia"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="instagram__handle"
+            aria-label="Перейти до Instagram @luna.nails"
+          >
+            @olesia_shpola_nails_podologia
+          </a>
+        </div>
+
+        <h2
+          class="section-h2 reveal"
+          style="color: var(--ivory); margin-bottom: 0"
+        >
+          FOLLOW THE<br /><em>NAIL ART</em>
+        </h2>
+
+        <div class="instagram__grid" role="list" aria-label="Галерея Instagram">
+          <!-- CONFIG: замінити src на реальні фото з Instagram -->
+          <div class="insta-item reveal" role="listitem">
+            <img
+              src="img/inst1.jpg"
+              alt="Nail art публікація в Instagram — olesia_shpola_nails_podologia"
+              loading="lazy"
+            />
+            <div class="insta-item__overlay" aria-hidden="true">♡</div>
+          </div>
+          <div class="insta-item reveal reveal-delay-1" role="listitem">
+            <img
+              src="img/pedicure.jpg"
+              alt="Педикюр публікація в Instagram — olesia_shpola_nails_podologia"
+              loading="lazy"
+            />
+            <div class="insta-item__overlay" aria-hidden="true">♡</div>
+          </div>
+          <div class="insta-item reveal reveal-delay-2" role="listitem">
+            <img
+              src="img/inst3.jpg"
+              alt="Хром манікюр публікація в Instagram — olesia_shpola_nails_podologia"
+              loading="lazy"
+            />
+            <div class="insta-item__overlay" aria-hidden="true">♡</div>
+          </div>
+          <div class="insta-item reveal reveal-delay-1" role="listitem">
+            <img
+              src="img/inst4.jpg"
+              alt="Авторський дизайн публікація в Instagram — olesia_shpola_nails_podologia"
+              loading="lazy"
+            />
+            <div class="insta-item__overlay" aria-hidden="true">♡</div>
+          </div>
+          <div class="insta-item reveal reveal-delay-2" role="listitem">
+            <img
+              src="img/inst5.jpg"
+              alt="Нарощування нігтів публікація в Instagram — olesia_shpola_nails_podologia"
+              loading="lazy"
+            />
+            <div class="insta-item__overlay" aria-hidden="true">♡</div>
+          </div>
+          <div class="insta-item reveal reveal-delay-3" role="listitem">
+            <img
+              src="img/inst6.jpg"
+              alt="Подологія публікація в Instagram — olesia_shpola_nails_podologia"
+              loading="lazy"
+            />
+            <div class="insta-item__overlay" aria-hidden="true">♡</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+     FINAL CTA — BLOCK 10
+     headingLevel: h2
+================================================ -->
+    <section class="final-cta" aria-label="Запрошення записатись">
+      <!--
+    CONFIG:
+      imageSrc: "assets/final-cta.jpg"
+      alt:      "Ідеальний nail art — запрошення до OLESYA NAILS Studio"
+  -->
+      <img
+        class="final-cta__bg"
+        src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1600&q=80&auto=format"
+        alt="Ідеальний nail art дизайн — запрошення записатись до olesia_shpola_nails_podologia"
+        loading="lazy"
+        aria-hidden="true"
+      />
+      <div class="final-cta__veil" aria-hidden="true"></div>
+      <div class="final-cta__content u-container reveal">
+        <p class="final-cta__sub">Приватна студія · Шпола</p>
+        <h2 class="final-cta__h2">
+          READY FOR YOUR<br /><em>SIGNATURE</em><br />LOOK?
+        </h2>
+        <a
+          href="#contact"
+          class="cta-primary"
+          style="font-size: 0.75rem; padding: 1.1rem 2.5rem"
+          aria-label="Записатись на манікюр педикюр або nail art"
+        >
+          Записатись на процедуру
+        </a>
+      </div>
+    </section>
+
+    <!-- ================================================
+     CONTACT — BLOCK 11
+     headingLevel: h2
+================================================ -->
+    <section
+      class="contact"
+      id="contact"
+      aria-label="Контактна інформація студії"
+    >
+      <div class="u-container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-overline">Як мене знайти</p>
+            <h2 class="section-h2" style="color: var(--ivory)">
+              Конта<em>кти</em>
+            </h2>
+          </div>
+        </div>
+
+        <div class="contact__grid">
+          <address class="contact__info reveal" style="font-style: normal">
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📍</span>
+              <div>
+                <div class="contact__info-label">Адреса</div>
+                <!-- CONFIG: замінити на реальну адресу -->
+                <div class="contact__info-val">
+                  вул. Соборна 4, Шпола<br />Приватна студія, 3 поверх
+                </div>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📞</span>
+              <div>
+                <div class="contact__info-label">Телефон</div>
+                <!-- CONFIG: замінити на реальний номер -->
+                <div class="contact__info-val">
+                  <a href="tel:+380501234567">+38 (050) 123-45-67</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">📸</span>
+              <div>
+                <div class="contact__info-label">Instagram</div>
+                <div class="contact__info-val">
+                  <a
+                    href="https://instagram.com/olesia_shpola_nails_podologia"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@olesia_shpola_nails_podologia</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">✈️</span>
+              <div>
+                <div class="contact__info-label">Telegram</div>
+                <div class="contact__info-val">
+                  <a
+                    href="https://t.me/luna_nails"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >@luna_nails</a
+                  >
+                </div>
+              </div>
+            </div> -->
+            <div class="contact__info-item">
+              <span class="contact__info-icon" aria-hidden="true">🕐</span>
+              <div>
+                <div class="contact__info-label">Робочі години</div>
+                <div class="contact__info-val">
+                  Пн–Сб: 9:00 – 20:00<br />Нд: за домовленістю
+                </div>
+              </div>
+            </div>
+          </address>
+
+          <!-- Google Maps placeholder -->
+          <!-- CONFIG: замінити src на реальне посилання Google Maps Embed -->
+          <div
+            class="contact__map reveal reveal-delay-2"
+            role="region"
+            aria-label="Карта розташування студії"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5233.837803882421!2d31.393711430171283!3d49.012127826704756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1787508802385!5m2!1suk!2sua"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            >
+              width="100%" height="100%" style="border:0;" allowfullscreen=""
+              loading="lazy" title="Карта розташування студії LESYA NAILS"
+              referrerpolicy="no-referrer-when-downgrade"> </iframe
+            >f
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+     FOOTER — BLOCK 12
+================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="u-container">
+        <div class="footer__inner">
+          <a href="#home">
+            <img
+              class="logo"
+              src="img/logo-manicure-salon.png"
+              data-i18n-alt="aboutImgAlt"
+              alt="Logo"
+            />
+          </a>
+
+          <nav class="footer__links" aria-label="Навігація у підвалі">
+            <a href="#services">Послуги</a>
+            <a href="#portfolio">Портфоліо</a>
+            <a href="#about">Про мене</a>
+            <a href="#contact">Контакти</a>
+          </nav>
+
+          <p class="footer__copy">
+            © 2026 BiS OLESYA NAILS Studio. Всі права захищені.
+          </p>
+
+          <a
+            href="#contact"
+            class="btn-book"
+            aria-label="Записатись на процедуру"
+          >
+            <span>Записатись</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky mobile CTA -->
+    <a
+      href="#contact"
+      class="sticky-cta"
+      aria-label="Записатись на манікюр або педикюр (мобільний)"
+    >
+      Записатись на процедуру
+    </a>
+
+    <!-- ================================================
+     JAVASCRIPT
+================================================ -->
+    <script src="script.js"></script>
+    <script></script>
+  </body>
+</html>
