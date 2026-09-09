@@ -8,11 +8,11 @@ CONFIG: Налаштування
     },
     video: {
       src: "assets/hero.mp4",
-      poster: "assets/hero-poster.jpg",
+      poster: "img/preview.jpg",
     },
     phone: "+380501234567",
-    instagram: "luna.nails",
-    telegram: "luna_nails",
+    instagram: "https://instagram.com/olesia_shpola_nails_podologia",
+    // telegram: "luna_nails",
   };
 
   /* ============================================

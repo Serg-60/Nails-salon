@@ -348,7 +348,7 @@
      position: relative;
      width: 100%;
      height: auto;
-     min-height: 600px;
+     min-height: 46rem;
      display: flex;
      align-items: center;
      overflow: hidden;
@@ -1800,6 +1800,13 @@
     ======================================== */
 
    /* Show burger at <1024px, hide desktop links */
+
+   @media (max-width: 1340px) {
+     .nav__links {
+       display: none;
+     }
+    }
+
    @media (max-width: 1023px) {
      .nav__links {
        display: none;
@@ -1814,6 +1821,11 @@
      }
 
      /* Hero floats */
+
+     .hero{
+      min-height: 34rem;
+     }
+    
      .hero__badge.visible {
        padding-top: 0;
        margin-bottom: 1.5rem;
