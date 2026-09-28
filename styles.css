@@ -318,6 +318,10 @@
      transition: transform var(--dur-mid) var(--ease-luxury);
    }
 
+   .nav_mobil_margen{
+    margin-top: 6.4rem;
+   }
+
    .nav__mobile.open {
      transform: translateX(0);
    }
